@@ -6,8 +6,8 @@
 
 body {
     font-family: sans-serif;
-    background-color: oklch(80% 0.00009 271.152);
-    color: oklch(20% 0.00002 271.152);
+    background-color: oklch(90% 0.00009 271.152);
+    color: oklch(40% 0.00002 271.152);
 }
 
 /* Header */
@@ -15,7 +15,14 @@ header {
     display: flex;
     justify-content: center;
     padding: 20px;
-    font-size: 30px;
+    font-size: 32px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+}
+
+header h1 {
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    /* background: white; */
+    letter-spacing: 2px;
 }
 
 /* Box for Control buttons */
@@ -31,19 +38,26 @@ header {
     width: 120px;
     height: 40px;
     padding: 5px 10px;
+    color: oklch(25% 0.00002 271.152);
     font-family: inherit;
     font-weight: 700;
-    font-size: 18px;
-    border: 1px solid oklch(80% 0.00009 271.152);
+    font-size: 20px;
+    border: 1px solid oklch(60% 0.00009 271.152);
     border-radius: 5px;
-    background-color: oklch(70% 0.00008 271.152);
+    background-color: oklch(75% 0.00008 271.152);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .controls button:hover {
-    background-color: oklch(90% 0.00009 271.152);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: oklch(95% 0.00009 271.152);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.controls button.active {
+    background-color: oklch(95% 0.00009 271.152);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* Main content with the grid */
@@ -60,7 +74,8 @@ header {
     flex: 0 0 auto;
     width: 640px;
     height: 640px;
-    border: 1px solid oklch(70% 0.00008 271.152);
+    border: 1px solid oklch(80% 0.00008 271.152);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .grid-square {
