@@ -8,3 +8,5 @@ A simple Etch-a-Sketch web application built with HTML, CSS, and JavaScript. - f
 - Clear the canvas with a button
 - Change brush color and size
 - Responsive design for various screen sizes
+
+test
